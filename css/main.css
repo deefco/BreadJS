@@ -62,6 +62,39 @@ textarea {
 
 
 
+        body {
+            background-color: #CCDE9C;
+            }   
+
+        pre {
+            font-family: monospace;
+        }
+        h1:hover {
+            color: #AC3939;
+        }
+
+        .content {
+            margin: 25px auto 25px auto;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            background-color: #fff;
+            width: 400px;
+            text-align: left;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .download {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+        }
+
+.download a:link {color:#000;} 
+.download a:visited {color:#000;} 
+
 
 
 
