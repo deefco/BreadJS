@@ -9,7 +9,7 @@ function Bread(kind, baker) {
 	this.baker = baker || "BreadJS";
 
 	var Bread =
-		["_.----._",
+		["  _.----._",
 		 ",'        `.",
 		 "(  ,',;,`,  )",
 		 "| ,.`,.``,.|",
