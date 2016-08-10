@@ -49,4 +49,15 @@ function Bread(kind, baker, color) {
 	this.log = function() {
 		console.log('%c' + this.bake(), 'color:' + this.color);
 	}
+
+	/***************************************************** 
+    *	print() bakes and displays the just baked Bread  *
+    *	on the webpage. Bakes in the color defined by	 *
+    *	the baker 										 *
+	*****************************************************/
+
+	this.print = function() {
+		var bread = "<pre style='color: " + this.color + "'>" + this.bake() + "</pre>";
+		document.write(bread);
+	}
  }
