@@ -4,9 +4,10 @@
 ********************************/
 
 
-function Bread(kind, baker) {
+function Bread(kind, baker, color) {
 	this.kind = kind || "Rye";
 	this.baker = baker || "BreadJS";
+	this.color = color || '#b59a48';
 
 	var Bread =
 		["  _.----._",
@@ -36,7 +37,27 @@ function Bread(kind, baker) {
 	*****************************************************/
 	
 	this.bake = function() { 
-		 return Bread.join("\n");
+		return Bread.join("\n");
 	}
 
+	/***************************************************** 
+    *	log() logs the baked Bread to the console to     *
+    *	make hungry developers happy 	    			 *
+    *								 					 *
+	*****************************************************/
+
+	this.log = function() {
+		console.log('%c' + this.bake(), 'color:' + this.color);
+	}
+
+	/***************************************************** 
+    *	print() bakes and displays the just baked Bread  *
+    *	on the webpage. Bakes in the color defined by	 *
+    *	the baker 										 *
+	*****************************************************/
+
+	this.print = function() {
+		var bread = "<pre style='color: " + this.color + "'>" + this.bake() + "</pre>";
+		document.write(bread);
+	}
  }
